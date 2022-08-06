@@ -18,6 +18,8 @@
         <li><p class="arrFun">ksort($ar)</p> - Sorts the array by key</li>
         <li><p class="arrFun">asort($ar)</p> - Sorts array by value, keeping key association</li>
         <li><p class="arrFun">shuffle($ar)</p> - Shuffles the array into random order</li>
+        <li><p class="arrFun">?? (null coalesce)</p> - $name = $za['name'] ?? 'not found'; &emsp; <=> &emsp;
+                                $name = isset($za['name']) ? $za['name'] : 'not found';</li> 
     </ul>
 </body>
 </html>
