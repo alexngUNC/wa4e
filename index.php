@@ -8,6 +8,9 @@
 </head>
 <body>
     <h1>Main Page</h1>
-    <a href="arrays.php">Arrays</a>
+    <ul>
+        <li><a href="arrays.php">Arrays</a></li>
+        <li><a href="functions.php">Functions</a></li>
+    </ul>
 </body>
 </html>
