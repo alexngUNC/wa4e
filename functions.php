@@ -7,6 +7,7 @@
     <title>functions.php</title>
 </head>
 <body>
+<a href="index.php">Home</a>
     <h1>Functions</h1>
     <ul>
         <li>Do not start with $</li>

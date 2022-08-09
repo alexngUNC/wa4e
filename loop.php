@@ -8,6 +8,7 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+<a href="index.php">Home</a>
     <h1>Loops</h1>
     <pre>$stuff = array("name" => "Chuck", 
                         "course" => "SI664"); 

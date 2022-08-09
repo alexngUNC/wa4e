@@ -7,7 +7,14 @@
     <title>mvc</title>
 </head>
 <body>
-<h1>Patterns</h1>
+<a href="index.php">Home</a>
+<h1>Model-View-Controller</h1>
+<p>A model that defines the elements of a web application and how they interact</p>
+<ul>
+    <li>View - produce output</li>
+    <li>Model - handle data</li>
+    <li>Controller - orchestration/routing</li>
+</ul>
 
 <h3>Processing POST Data</h3>
 <ol>

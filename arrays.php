@@ -8,6 +8,7 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+<a href="index.php">Home</a>
     <h1>Array Functions</h1>
     <ul>
         <li><p class="arrFun">array_key_exists($key, $ar)</p> - Returns TRUE if key is set in the array</li>

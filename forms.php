@@ -7,6 +7,7 @@
     <title>forms</title>
 </head>
 <body>
+<a href="index.php">Home</a>
 <h1>Forms in PHP</h1>
 <ul>
     <li>GET - parameters are placed on the URL, which is retrieved</li>
