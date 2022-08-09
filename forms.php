@@ -59,6 +59,7 @@ $oldGuess = isset($_POST['guess']) ? $_POST['guess'] : '';
 <h3>Incoming data validation</h3>
 <p>Make sure all user data is present and in the correct format before proceeding.</p>
 <ul>
+    <li>isset($_GET['name']) - check if the GET request contains data</li>
     <li>strlen($var) > 0 - non-empty string</li>
     <li>is_numeric($var) - a number is numeric</li>
     <li>strpos($var, '@') > 0 - validating an email address by making sure the 
