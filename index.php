@@ -11,6 +11,7 @@
     <ul>
         <li><a href="arrays.php">Arrays</a></li>
         <li><a href="functions.php">Functions</a></li>
+        <li><a href="forms.php">Forms</a></li>
     </ul>
 </body>
 </html>

@@ -16,6 +16,10 @@
             which is a copy of the actual variable in the function call) - the passed in variable isn't changed
         <li>Call by reference with & (change argument)</li>
     </ul>
+    <h3>Including code from other files</h3>
+        <pre>
+            require_once "nav.php"
+        </pre>
     <h3>Greet function</h3>
         <pre>
         function greet() {
