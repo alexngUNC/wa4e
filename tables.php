@@ -71,5 +71,72 @@
         <li>CHAR allocates entire space (faster for small strings where length is known)</li>
         <li>VARCHAR allocates variable amount of space depending on the data length (less space)</li>
     </ul>
+    <h4>Text Fields</h4>
+    <ul>
+        <li>have a character set - paragraphs or HTML pages</li>
+        <li>TINYTEXT up to 255 characters</li>
+        <li>TEXT up to 65k</li>
+        <li>MEDIUMTEXT up to 16M</li>
+        <li>LONGTEXT up to 4G</li>
+        <li>Generally not used with indexing or sorting - and only then limited to a prefix</li>
+    </ul>
+    <h4>Binary Types (rarely used)</h4>
+    <ul>
+        <li>Character = 8-32 bits of information depending on character set</li>
+        <li>Byte - 8 bits of information</li>
+        <li>BYTE(n) - up to 255 bytes</li>
+        <li>VARBINARY(n) - up to 65k bytes</li>
+        <li>Small images - data</li>
+        <li>Not indexed or sorted</li>
+    </ul>
+    <h4>Binary Large Object (BLOB)</h4>
+    <ul>
+        <li>Should be used for 2-5M</li>
+        <li>Large raw data, files images, word documents, PDF, movies, etc.</li>
+        <li>BNo transition, indexing, or character set/li>
+        <li>TINYBLOB(n) - up to 255</li>
+        <li>BLOB(n) - up to 65k</li>
+        <li>MEDIUMBLOB - up to 16M</li>
+        <li>LONGBLOB(n) - up to 4G</li>
+    </ul>
+    <h4>Dates</h4>
+    <ul>
+        <li>TIMESTAMP - 'YYYY-MM-DD HH:MM:SS' (1970, 2037)</li>
+        <li>DATETIME - 'YYYY-MM-DD HH:MM:SS'</li>
+        <li>DATE - 'YYYY-MM-DD'</li>
+        <li>TIME - 'HH:MM:SS'</li>
+        <li>Built-in MySQL function NOW()</li>
+    </ul>
+    <h4>Integers</h4>
+    <ul>
+        <li>Numbers are very efficient, little storage, easy to process because CPU's can
+            compare them often with a single instruction
+        </li>
+        <li>TINYINT (-128, +128)</li>
+        <li>SMALLINT (-32768, +32768)</li>
+        <li>INT or INTEGER (2 billion)</li>
+        <li>BIGINT - (10**18 ish)</li>
+    </ul>
+    <h4>Floating Point Numbers</h4>
+        <ul>
+            <li>Floating point numbers can represent a wide range of values but accuracy is limtied</li>
+            <li>FLOAT (32-bit) - 10**38 with seven digits of accuracy</li>
+            <li>DOUBLE (64-bit) - 10**308 with 14 digits of accuracy</li>
+        </ul>
+    <h4>AUTO_INCREMENT</h4>
+    <p>Often as we make multiple tables and need to JOIN them together we need an integer,
+        primary key for each row so we can efficiently add a reference to a row in a table,
+        in some other table as a foreign key</p>
+    <h3>MYSQL Index Types</h3>
+    <ul>
+        <li><b>PRIMARY KEY</b> - very little space, very fast, exact match, requires no duplicates,
+            extremely fast for integer fields
+        </li>
+        <li><b>INDEX</b> - good for individual row lookup and sorting/grouping results - works
+    best with exact matches or prefix lookups can suffest HASH or BTREE</li>
+        <li>FULLTEXT - costly to maintain on insert of new data, can handle substrings and the 
+            LIKE clause
+        </li>
+    </ul>
 </body>
 </html>
