@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<a href="index.php">Home</a>
     <h1>Relational Databases</h1>
     <p>Relational databases model data by storing rows and columns in tables. The power of the
         relational database lies in its ability to efficiently retrieve data from those tables
