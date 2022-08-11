@@ -138,5 +138,31 @@
             LIKE clause
         </li>
     </ul>
+    <h3>Hashes</h3>
+    <p>A hash function is any algorithm or subroutine that maps large data sets to smaller data sets,
+        called keys. For example, a single integer can serve as an index to an array (associative array).
+        The values returned by a hash function are called hash values, hash codes, hash sums, checksums, or
+        simple hashes.</p>
+    <p>Hash functions are mostly used to accelerate table lookup or data comparison tasks such as finding items
+        in a database.</p>
+    <h3>B-Trees</h3>
+    <p>A B-tree is a tree data structure that keeps data sorted and allows searches, sequential access, insertions, 
+        and deletions in logarthmic amortized time. The B-tree is optimized ofr systems that read and write large blocks of data. It is commonly
+        used in databases and file systems.</p>
+    <h3>Building a Data Model</h3>
+    <ul>
+    <li>Drawing a picture of the data objects for our application and then figuring out how to 
+        represent the obkects and their relationships
+    </li>
+    <li>Basic rule: don't put the same string data in twice - use a relationship instead</li>
+    <li>When there is one thing in the "real world" there should be one copy of that thing in the database</li>
+    </ul>
+
+    <h3>Database Normalization (3NF)</h3>
+    <ul>
+        <li>Do not replicate data - reference/point at data instead</li>
+        <li>Use integers for keys and references</li>
+        <li>Add a special "key" column to each table which we will make references to</li>
+    </ul>
 </body>
 </html>
