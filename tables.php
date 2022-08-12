@@ -164,5 +164,8 @@
         <li>Use integers for keys and references</li>
         <li>Add a special "key" column to each table which we will make references to</li>
     </ul>
+    <h4>Integer Reference Pattern</h4>
+    <p>We use integer columns in one table to reference rows in another table (ID column)</p>
+    <h3>Three Kinds of Keys</h3>
 </body>
 </html>
