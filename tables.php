@@ -167,5 +167,10 @@
     <h4>Integer Reference Pattern</h4>
     <p>We use integer columns in one table to reference rows in another table (ID column)</p>
     <h3>Three Kinds of Keys</h3>
+    <ul>
+        <li>Primary - generally an integer auto-increment field</li>
+        <li>Logical - what the outside world uses for lookup</li>
+        <li>Foreign - generally an integer key that points to a row in another table</li>
+    </ul>
 </body>
 </html>
