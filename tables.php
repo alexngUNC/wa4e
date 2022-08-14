@@ -172,5 +172,22 @@
         <li>Logical - what the outside world uses for lookup</li>
         <li>Foreign - generally an integer key that points to a row in another table</li>
     </ul>
+    <h4>Primary key rules</h4>
+    <ul>
+        <li>Never use your logical key as the primary key</li>
+        <li>Logical keys can and do change (albeit slowly)</li>
+        <li>Relatinoships that are based on matching string fields are far
+            less efficient than integers preformance-wise</li>
+        <li>A foreign key is when a table has a column that contains a key
+            which points the primary key of another table<li>
+        <li>When all primary keys are integers, then all foreign keys
+            are integers</li>
+    </ul>
+    <h3>The JOIN Operation</h3>
+    <ul>
+        <li>The JOIN operation links across several tables as apart of a select operation</li>
+        <li>You must tell the JOIN how to use the keys that make the connection between
+            the tables using an ON clause</li>
+    </ul>
 </body>
 </html>
