@@ -16,5 +16,5 @@
         <li><a href="tables.php">Tables</a></li>
         <li><a href="oop.php">PHP OOP</a></li>
     </ul>
-</body>
+</body> 
 </html>
