@@ -195,5 +195,8 @@
         <li>CASCADE - adjust child rows by removing or updating to maintain consistency</li>
         <li>SET NULL - set the foreign key columns in the child rows to null</li>
     </ul>
+    <h3>Many to Many</h3>
+    <p>Many to many relationships are solved by creating a junction table and separating the relationship
+        into multiple many to one relationships</p>
 </body>
 </html>
