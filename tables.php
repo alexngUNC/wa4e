@@ -189,5 +189,11 @@
         <li>You must tell the JOIN how to use the keys that make the connection between
             the tables using an ON clause</li>
     </ul>
+    <h3>ON DELETE Choices</h3>
+    <ul>
+        <li>Default/RESTRICT - don't allow changes which break the constraint</li>
+        <li>CASCADE - adjust child rows by removing or updating to maintain consistency</li>
+        <li>SET NULL - set the foreign key columns in the child rows to null</li>
+    </ul>
 </body>
 </html>
